@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    box-sizing: border-box;
+}
+body{
+    background: url('https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: rgba(255, 255, 255, 0.096);
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(255,255,255,0.080),transparent);
+    z-index: 100;
+}
+.nav-logo p{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid black;
+}
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.btn:hover{
+    background: rgb(192, 183, 183);
+}
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    background: rgb(192, 183, 183);
+}
+.btn.btn.white-btn:hover{
+    background: rgb(192, 183, 183);
+}
+.nav-button-menu{
+    display: none;
+}
+.Form-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+}
+.login-container{
+    width: 500px;
+    position: absolute;
+    left: 4px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+.registration-container{
+    width: 500px;
+    position: absolute;
+    right: -520px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+.top span{
+    color: black;
+    font-size: medium;
+    padding: 10px 0;
+    display: flex;justify-content: center;
+}
+.top span a{
+    font-weight: 500;
+    color: black;
+    margin-left: 5px;
+}
+header{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;    
+}
+.two-forms{
+    display: flex;
+    gap: 10px;
+}
+.input-feild{
+    font-size: 15px;
+    background: white;
+    color: black;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+.input-feild:hover, .input-feild:focus{
+    background: rgb(192, 183, 183);
+}
+::-webkit-input-placeholder{
+    color: black;
+}
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+} 
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 35px;
+    outline: none;
+    background: white;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}   
+.submit:hover{
+    background-color: rgb(192, 183, 183);
+    box-shadow: 1px 5px 7px 1px black;
+}
+.two-col{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: small;
+    margin-top: 10px;
+}
+.two-col .one{
+    display: flex;
+    gap: 5px;
+}
+.two label a{
+    text-decoration: none;
+    color: black;
+}
+.two label a:hover{
+    text-decoration: underline;
+}
